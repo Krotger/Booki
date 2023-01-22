@@ -1,0 +1,801 @@
+/* General */
+
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('/CSS/polices/Raleway/Raleway.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+html
+{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+body
+{
+    margin:0;
+}
+h1
+{
+    color: black;
+    font:700 22px/25.83px 'Raleway';
+}
+h2
+{
+    color: black;
+    font:700 22px/25.83px 'Raleway';
+}
+h3
+{
+    color: black;
+    font:700 18px/21.13px 'Raleway';
+}
+h4
+{
+    color: black;
+    font:700 16px/18.78px 'Raleway' ;
+    
+}
+p
+{
+    color: black;
+    font:400 16px/18.9px 'Raleway';
+    
+}
+a
+{
+    color: black;
+    text-decoration: none;
+}
+a:visited
+{
+    color: black;
+}
+
+/* Header Logo + menu */
+
+header
+{
+    position: relative;
+    margin:44px 3.5% 0px 3.5%;  
+}
+header img
+{
+    height: 19px;
+    
+}
+nav ul
+{
+    position: absolute;
+    display: flex;
+    list-style: none;
+    right: 0;
+    top: -10px;
+    font:500 16px/18.78px 'Raleway';
+}
+nav a
+{
+    
+    color: black;
+    text-decoration: none;
+    padding:48px 27px 0px 40px;
+    border-top:2px solid transparent;
+}
+nav a:hover
+{
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+
+/* Section 1 */
+
+#section1
+{
+    margin: 63px 3.5% 0px 3.5%;
+}
+#search_button
+{
+    border:1px solid #f2f2f2;
+    height: 49px;
+    border-radius: 15px 0px 0px 15px;
+    font:700 18px/21.13px 'Raleway';
+    padding-left: 66px;
+}
+#search_button:focus
+{
+    border: 1px solid #f2f2f2;
+}
+#search_button:focus-visible
+{
+    outline: transparent;
+}
+#location_logo
+{
+    position: absolute;
+    border: 1px solid #f2f2f2;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #F2f2f2;
+    padding: 16px 18px 15px 18px;
+}
+#location
+{
+    display: flex;
+    margin-top: 20px;
+}
+::placeholder
+{
+    color: black;
+    opacity: 1;
+}
+.button1
+{
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #0065FC;
+    color: white;
+    font:700 18px/21.13px 'Raleway';
+    padding: 1px 16px;
+}
+.button1:hover
+{
+    cursor: pointer;
+}
+#button2
+{
+    display: none;
+}
+#filtres
+{
+    display: flex;
+    margin-top: 30px;
+}
+#filtres h3
+{
+    margin: 13px 2% 13px 0px;
+}
+.button_filtres
+{
+    display: flex;
+    background-color: white;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    font:700 17px/19.96px 'Raleway';
+    padding: 12px 15px 10px 15px;
+    align-items: center;
+}
+.button_filtres img
+{
+    margin-right: 10px;
+}
+.button_filtres:hover
+{
+    background-color: #DEEBFF;
+    cursor: pointer;
+}
+#cardsfiltres
+{
+    display: flex;
+    gap: 2.5%;
+    width: 100%;
+}
+#info
+{
+    display: flex;
+    height: 24px;
+    margin-top: 38.5px;
+    align-items: center;
+}
+#info img
+{
+    height: 10px;
+    border: 1px solid #D9D9D9;
+    border-radius: 100%;
+    padding: 7px 10px 7px 10px;
+    margin-right: 11px;
+}
+
+
+/* Section Hebergements */
+
+#section2
+{
+    display: flex;
+    margin: 39px 3.5% 60px 3.5%;
+}
+.pcards
+{
+    font:550 14px/16px 'Raleway';
+}
+article
+{
+    background-color: #F2f2f2;
+    border-radius: 20px;
+    padding: 42px 3% 46px 3%;
+}
+article h2
+{
+    margin: 0px 0px 23px 0px;
+}
+#contenu1
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4%;
+}
+.cards
+{
+    width: 28.8%;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 3px 3px 10px #d7d7d7f1;
+    padding: 5px;
+}
+
+.cards a img 
+{
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.cards h4
+{
+    margin: 5px 0px 6px 16px;
+}
+
+.cards p
+{
+    margin: 0px 0px 8px 16px;
+}
+
+.cards .star
+{
+    height: 13px;
+    margin: 0px 0.5% 0px 0px;
+    border:0;
+}
+
+.rating 
+{
+    display: inline-flex;
+    margin: 0px 0px 0px 16px;
+}
+
+.cards .rating .whitestar
+{
+    height: 13px;
+    border:0;
+}
+
+.afficher
+{
+    margin:10px 0px 2px 0.8%; 
+}
+
+/* Aside Les Plus Populaires */
+
+aside
+{
+    background-color: #F2f2f2;
+    border-radius: 20px;
+    margin-left: 3.5%;
+    padding: 41px 3.5% 0px 3.5%;
+}
+
+aside h2
+{
+    position: relative;
+    margin: 0px 0px 25px 0px;
+    width: 100%;
+}
+
+aside h2 img
+{
+    position: absolute;
+    right: 0;
+    top:7px;
+}
+
+.cardsaside
+{
+    margin-bottom: 35px;
+}
+
+.cardsaside a
+{
+    display: flex;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px #d7d7d7f1;
+    text-decoration: none;
+}
+
+.asidecards
+{
+    
+    width: 35%;
+    height: 134px;
+    border: 5px solid white;
+    border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
+}
+
+.ratingaside 
+{
+    display: inline-flex;
+    margin-left: -1px;
+    position: absolute;
+    bottom: 8px;
+}
+
+.asideinfos
+{
+    margin-left: 4%;
+    margin-top: -2%;
+    margin-right: 4%;
+    width: 52%;
+}
+
+.asideinfos h4
+{
+    margin-bottom: 0;
+}
+
+.asideinfos p
+{
+    margin: 6px 0% 0px 0%;
+}
+
+.ratingaside img
+{
+    height: 13px;
+    margin: 0px 0.5% 0px 0px;
+}
+
+/* Section Activites */
+
+#activites 
+{
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+}
+
+#activites h1
+{
+    margin-top:0;
+    margin-bottom: 18px;
+}
+
+.contenu2
+{
+    display: flex;
+    gap:4%;
+}
+
+.cardsactivites
+{
+    border:0px solid transparent;
+    border-radius: 20px;
+    width:50%;
+    box-shadow: 3px 3px 10px #d7d7d7f1;
+}
+
+.cardsactivites a
+{
+    text-decoration: none;
+}
+
+
+
+.cardsactivites img
+{
+    width: 100%;
+    height: 380px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.cardsactivites h4
+{
+    margin-left: 6%;
+    margin-top: 20px;
+}
+
+/* Footer */
+
+footer
+{
+    display: flex;
+    margin-left: 3.5%;
+    margin-right:3.5%;
+    background-color: #f2f2f2;
+    margin-top: 61px;
+    padding-bottom: 35px;
+}
+.footerinfos
+{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-left: 6%;
+    margin-top: 15px;
+    
+}
+.footerinfos a
+{
+    text-decoration: none;
+    color: black;
+    font:400 16px/18.78px 'Raleway';
+    margin-bottom: 12px;
+}
+.footerinfos h3
+{
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+@media all and (max-width: 992px)
+{
+    header
+    {
+        margin-left: 7%;
+    }
+    #section1
+    {
+        margin-left: 7%;
+        margin-right: 7%;
+        margin-top: 58px;
+    }
+    #section1 h2
+    {
+        margin-bottom: 13px;
+    }
+    #cardsfiltres
+    {
+        gap: 2.5%;
+    }
+    #section2
+    {
+        flex-direction: column;
+        margin-left: 7%;
+        margin-right: 7%;
+        margin-bottom: 70px;
+    }
+    aside
+
+    {
+        display: flex;
+        margin-left: 0;
+        margin-top: 53px;
+        flex-wrap: wrap;
+        gap: 3%;
+        padding-top: 34px;
+        padding-bottom: 48px;
+    }
+    .asidecards
+    {
+        width: 36%;
+    }
+    aside h1
+    {
+        width: 100%;
+        margin-bottom: 26px;
+    }
+    .asideinfos h4
+    {
+        font: 700 14px/16px 'Raleway';
+    }
+    .asideinfos p
+    {
+        margin-bottom: 10px;
+        font: 550 13px/15px 'Raleway';
+    }
+    .ratingaside
+    {
+        position: absolute;
+        margin-bottom: 0;
+        bottom: 7px;
+    }
+    .cardsaside
+    {
+        width: 31.3%;
+        margin: 0;
+    }
+
+    article
+    {
+        width: 94%;
+    }
+    #activites
+    {
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+    #activites h2
+    {
+        margin-bottom: 34px;
+    }
+    .cardsactivites
+    {
+        width: 21%;
+    }
+    .cardsactivites img
+    {
+        height: 211px;
+    }
+    .cardsactivites h4
+    {
+        margin: 4px 9% 4px 9%;
+    }
+    .h4court
+    {
+        padding-top: 10px;
+    }
+    .contenu2
+    {
+        justify-content: space-between;
+    }
+    footer
+    {
+        margin-top: 69px;
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+
+}
+
+@media all and (max-width: 768px)
+{
+    header
+    {
+        text-align: center;
+        margin: 0;
+    }
+    header img
+    {
+        margin-top: 21px;
+    }
+    
+    nav ul
+    {
+        position: relative;
+        top: 0;
+        padding: 0;
+        margin-top: 49px;
+        margin-bottom: 0;
+        padding-bottom: 23px;
+        font-weight: 400;
+    }
+    nav ul li 
+    {
+        width: 50%;
+        border-bottom: 3px solid #F2F2F2;
+        padding-bottom: 23px;
+    }
+    nav a
+    {
+        width: 50%;
+        padding: 0;
+    }
+    nav a:hover
+    {
+        border-top: 2px solid transparent;
+    }
+    nav ul li:hover
+    {
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 23px;
+    }
+    #filtres
+    {
+        flex-wrap: wrap;
+        margin-top: 34px;
+        gap: 4%;
+    }
+    #filtres h3
+    {
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+    .button_filtres
+    {
+        margin:0;
+        width: 48%;
+        height: 50px;
+        font:700 11px/12.91px 'Raleway';
+        margin-bottom: 17px;
+    }
+    .button_filtres:hover
+    {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        background-color: white;
+    }
+    .button_filtres img
+    {
+        margin-right: 4%;
+    }
+    #cardsfiltres
+    {
+        flex-wrap: wrap;
+        gap: 4%;
+    }
+    .button1
+    {
+        display: none;
+    }
+    #button2
+    {
+        display: block;
+        border-radius: 0px 15px 15px 0px;
+        background-color: #0065FC;
+        padding: 16px 18px 15px 18px;
+    }
+    #search_button
+    {
+        width: 100%;
+    }
+    #section1
+    {
+        margin: 8px 5% 0px 5%;
+        position: relative;
+    }
+    #section1 h1
+    {
+        margin-top: 0;
+    }
+    #section1 p
+    {
+        margin-top: 0;
+    }
+    #location
+    {
+        margin-top: 36px;
+    }
+    #info
+    {
+        bottom: 17px;
+        align-items: initial;
+        height: 57px;
+    }
+    #section2
+    {
+        margin: 10px 0% 0px 0%;
+        flex-direction: column-reverse;
+    }
+    aside
+    {
+        border-radius: 0px;
+        padding:28px 5% 36px 5%;
+        margin-top: 0;
+    }
+    aside h2
+    {
+        margin-bottom: 15px;
+    }
+    .cardsaside
+    {
+        width: 100%;
+        margin-bottom: 11px;
+    }
+    .asideinfos h4
+    {
+        width: 101%;
+    }
+    .ratingaside
+    {
+        margin-left: 1px;
+        width: 50%;
+        margin-bottom: 3px;
+    }
+    article
+    {
+        background-color: white;
+        width: 90%;
+        padding: 26px 5% 70px 5%;
+    }
+    article h1
+    {
+        margin-bottom: 15px;
+    }
+    .rating
+    {
+        width: 75%;
+        left: 4%;
+    }
+    #contenu1
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+    .cards
+    {
+        width: 98%;
+        margin-bottom: 12px;
+    }
+    .cards img
+    {
+        width: 97%;
+        height: 114px;
+    }
+    .cards .star
+    {
+        width: 5%;
+    }
+    .cards .rating img
+    {
+        width: 13px;
+    }
+    .cards h4
+    {
+        left: 4%;
+        top: 105px;
+    }
+    .cards p
+    {
+        left: 4%;
+        top: 137px;
+    }
+    .afficher
+    {
+        display: none;
+    }
+    #activites
+    {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #activites h2
+    {
+        margin-bottom: 15px;
+    }
+    .contenu2
+    {
+        flex-direction: column;
+    }
+    .cardsactivites
+    {
+        width: 100%;
+        height: 190px;
+        margin-bottom: 24px;
+    }
+    .cardsactivites img
+    {
+        height: 134px;
+    }
+    .cardsactivites h4
+    {
+        margin-left: 5%;
+        margin-top: 17px;
+        height: 15px;
+        padding:0;
+    }
+    footer
+    {
+        flex-direction: column;
+        margin: 0;
+        margin-top: 55px;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 17px;
+    }
+    .footerinfos
+    {
+        width: 90%;
+        margin-left: 3%;
+    }
+    .footerinfos h3
+    {
+        margin-top: 13px;
+    }
+    #assistance
+    {
+        margin-top: 23px;
+    }
+}
+
+
